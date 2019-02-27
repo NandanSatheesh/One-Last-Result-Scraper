@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,9 +18,14 @@ public class Scraper {
 
 
         System.setProperty("webdriver.chrome.driver", "chromedriver");
-        WebDriver driver = new ChromeDriver();
 
-        for(int j =130 ;j < 140 ; j++){
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("incognito");
+        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+        WebDriver driver = new ChromeDriver(capabilities);
+
+        for(int j =59 ;j < 140 ; j++){
 
 
         driver.navigate().to("http://results.vtu.ac.in/resultsvitavicbcs_19/index.php");

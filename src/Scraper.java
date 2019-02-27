@@ -15,7 +15,7 @@ public class Scraper {
     public static void main(String[] args) {
 
 
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         WebDriver driver = new ChromeDriver();
 
         for(int j =130 ;j < 140 ; j++){

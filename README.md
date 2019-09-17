@@ -4,7 +4,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/compatibility-club-penguin.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/no-ragrets.svg)](https://forthebadge.com)
 
-VTU Results Data scrapped using Selenium in Java 
+VTU Results Data scrapped using Selenium in Java.
 
 ## Setting up 
 Please refer Selenium documentation. Add all the JARs necessary. Use the appropriate driver for Windows/Mac. 

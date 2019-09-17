@@ -1,8 +1,7 @@
 import java.util.regex.Pattern;
 
 public class Result implements Comparable {
-
-
+    
     private String subjectCode ;
     private String subjectName ;
     private String internalMarks ;
@@ -11,14 +10,9 @@ public class Result implements Comparable {
     private int subjectCredits ;
 
     public void setSubjectCredits() {
-
-
-
-
+        
         if(this.subjectCode.equalsIgnoreCase("15CSP78")){
-
             this.subjectCredits = 2 ;
-
         }
         else if(Pattern.matches("15[A-Z]{2}[L][1-9]{2}", this.subjectCode) )
             this.subjectCredits = 2 ;
@@ -26,7 +20,6 @@ public class Result implements Comparable {
             this.subjectCredits = 4 ;
         else if(Pattern.matches("15[A-Z]{2}[7][4|5][1-9]", this.subjectCode))
             this.subjectCredits = 3 ;
-
     }
 
     public int getSubjectCredits() {
